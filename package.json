@@ -1,0 +1,25 @@
+{
+  "name": "striking-minds",
+  "version": "1.0.0",
+  "description": "One page Parallax Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoutamBhattacharyya/striking-minds.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GIT",
+    "Gulp"
+  ],
+  "author": "GoutamB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoutamBhattacharyya/striking-minds/issues"
+  },
+  "homepage": "https://github.com/GoutamBhattacharyya/striking-minds#readme"
+}
