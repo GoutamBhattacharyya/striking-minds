@@ -8,19 +8,24 @@ var concat = require('gulp-concat');
 var browserify = require('gulp-browserify');
 var merge = require('merge-stream');
 var injectPartials = require('gulp-inject-partials');
+var newer = require ('gulp-newer');
+var imgMin = require ('gulp-imagemin');
 
 var SOURCEPATHS = {
     sassSource : 'src/scss/*.scss',
+    sassApp: 'src/scss/app.scss',
     htmlSource : 'src/*.html',
     htmlPartialsSource: 'src/partials/*.html',
-    jsSource : 'src/js/*.js'
+    jsSource : 'src/js/*.js',
+    imgSource : 'src/images/**'
 };
 
 var APPPATH = {
     root : 'app/',
     css : 'app/css',
     js : 'app/js',
-    fonts: 'app/fonts'
+    fonts: 'app/fonts',
+    img : 'app/images'
 };
 
 gulp.task('clean-html', function(){
@@ -34,13 +39,20 @@ gulp.task('clean-scripts', function(){
 gulp.task('sass',function(){
     var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
     var sassFiles;
-    sassFiles =  gulp.src(SOURCEPATHS.sassSource)
+    sassFiles =  gulp.src(SOURCEPATHS.sassApp)
         .pipe(autoprefixer())
         .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
         return merge(sassFiles, bootstrapCSS)
         .pipe(concat('app.css'))
         .pipe(gulp.dest(APPPATH.css));
 });
+
+gulp.task('images', function(){
+    return gulp.src(SOURCEPATHS.imgSource)
+        .pipe(newer(APPPATH.img))
+        .pipe(imgMin())
+        .pipe(gulp.dest(APPPATH.img));
+})
 gulp.task('moveFonts', function(){
     gulp.src('./node_modules/bootstrap/dist/fonts/*.{eot,svg,ttf,woff,woff2}')
         .pipe(gulp.dest(APPPATH.fonts));
@@ -70,7 +82,7 @@ gulp.task('serve', ['sass'], function(){
     });
 });
 
-gulp.task('watch', ['serve','sass', 'clean-html', 'scripts', 'clean-scripts','moveFonts', 'html'],function(){
+gulp.task('watch', ['serve','sass', 'clean-html', 'scripts', 'clean-scripts','moveFonts', 'images', 'html'],function(){
     gulp.watch([SOURCEPATHS.sassSource], ['sass']);
     //gulp.watch([SOURCEPATHS.htmlSource], ['copy']);
     gulp.watch([SOURCEPATHS.jsSource], ['scripts']);
