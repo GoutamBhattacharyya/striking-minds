@@ -46,7 +46,7 @@ gulp.task('moveFonts', function(){
         .pipe(gulp.dest(APPPATH.fonts));
 });
 gulp.task('html', function(){
-    return gulp.src(SOURCEPATHS.htmlPartialsSource)
+    return gulp.src(SOURCEPATHS.htmlSource)
         .pipe(injectPartials())
         .pipe(gulp.dest(APPPATH.root));
 });
