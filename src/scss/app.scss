@@ -1,3 +1,4 @@
-html{
-    background: blue;
-}
+@import 'variables';
+@import 'mixin';
+@import 'hamburger';
+@import 'header';

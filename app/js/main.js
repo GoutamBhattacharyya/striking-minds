@@ -12646,5 +12646,17 @@ bootstrap = require('bootstrap');
 //mustache = require('mustache');
 
 
+var $ = jQuery;
+
+$(document).ready(function(){
+
+    // Hamburger amnimation
+	$('.side-panel-controller').click(function(){
+		$(this).toggleClass('open');
+    });
+    
+});
+
+
 }).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"bootstrap":1,"jquery":14}]},{},[15])
