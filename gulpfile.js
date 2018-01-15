@@ -7,10 +7,12 @@ var clean = require('gulp-clean');
 var concat = require('gulp-concat');
 var browserify = require('gulp-browserify');
 var merge = require('merge-stream');
+var injectPartials = require('gulp-inject-partials');
 
 var SOURCEPATHS = {
     sassSource : 'src/scss/*.scss',
     htmlSource : 'src/*.html',
+    htmlPartialsSource: 'src/partials/*.html',
     jsSource : 'src/js/*.js'
 };
 
@@ -43,10 +45,17 @@ gulp.task('moveFonts', function(){
     gulp.src('./node_modules/bootstrap/dist/fonts/*.{eot,svg,ttf,woff,woff2}')
         .pipe(gulp.dest(APPPATH.fonts));
 });
+gulp.task('html', function(){
+    return gulp.src(SOURCEPATHS.htmlPartialsSource)
+        .pipe(injectPartials())
+        .pipe(gulp.dest(APPPATH.root));
+});
+/*
 gulp.task('copy',['clean-html'],function(){
     gulp.src(SOURCEPATHS.htmlSource)
         .pipe(gulp.dest(APPPATH.root));
 });
+*/
 gulp.task('scripts',['clean-scripts'],function(){
     gulp.src(SOURCEPATHS.jsSource)
         .pipe(concat('main.js'))
@@ -61,10 +70,11 @@ gulp.task('serve', ['sass'], function(){
     });
 });
 
-gulp.task('watch', ['serve','sass', 'copy', 'clean-html', 'scripts', 'clean-scripts','moveFonts'],function(){
+gulp.task('watch', ['serve','sass', 'clean-html', 'scripts', 'clean-scripts','moveFonts', 'html'],function(){
     gulp.watch([SOURCEPATHS.sassSource], ['sass']);
-    gulp.watch([SOURCEPATHS.htmlSource], ['copy']);
+    //gulp.watch([SOURCEPATHS.htmlSource], ['copy']);
     gulp.watch([SOURCEPATHS.jsSource], ['scripts']);
+    gulp.watch([SOURCEPATHS.htmlSource, SOURCEPATHS.htmlPartialsSource], ['html']);
 });
 
 gulp.task('default', ['watch']);
