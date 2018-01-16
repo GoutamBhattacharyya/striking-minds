@@ -1,0 +1,50 @@
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.home-bg {
+    //background-color: $gray;
+    // background-image: url(../images/home-banner.jpg);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 60px 0 80px;
+    position: relative;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px; 
+    .bg-white-transparent{
+        background: $white-transparent-60;
+        visibility: hidden;
+        padding: 25px;
+        width: 72%;
+        margin: 0 auto;
+        font-family: 'Archivo', sans-serif;
+        h1{
+            font-size: $bigfont;
+            text-transform: uppercase;
+            line-height: 74px;
+            color: $black;
+            margin: 0px;
+            padding: 0px;
+            font-weight: 700;
+        }
+        h3{
+            font-size: $medium-size-type-1;
+            text-transform: uppercase;
+            line-height: 54px;
+            font-style: italic;
+            color: $black;
+            margin: 0px;
+            padding: 0px;
+            font-weight: 600;
+        }
+    }   
+}

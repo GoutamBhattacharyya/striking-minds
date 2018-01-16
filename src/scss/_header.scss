@@ -3,4 +3,17 @@ header{
     padding: 15px 0px;
     border-bottom: 1px solid $light-gray;
     @include box-shadow(1px,1px,8px,$light-gray,false);
+    position: fixed;
+    z-index: 10;
+    width: 100%
+}
+
+figure#mouse-pointer {    
+	background-image: url('../images/slide-off-panel.png');
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	margin-left: -8px; 
+    display: block;
+    z-index: 11;
 }

@@ -41,6 +41,28 @@
             top: 16px;
         }
     }
+    &:hover{
+        span{
+            &:nth-child(1){
+                top: 7px;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+                left: -20px;
+            }
+            &:nth-child(3){
+                top: 7px;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+    }
     &.open{
         span{
             &:nth-child(1){

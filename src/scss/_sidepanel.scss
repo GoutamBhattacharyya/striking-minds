@@ -1,0 +1,81 @@
+.sidepanel{
+    background-color: $white;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    right: -380px;
+    width: 350px;
+    background-color: #fff;
+    -webkit-transition: right .3s ease-in-out, left .3s ease-in-out;
+    -moz-transition: right .3s ease-in-out, left .3s ease-in-out;
+    transition: right .3s ease-in-out, left .3s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+        .side-area-mask {
+            content: "";
+            width: 9000px;
+            height: 9000px;
+            position: absolute;
+            top: 0;
+            left: -9000px;
+            visibility: hidden;
+            background: transparent;
+            -webkit-transition: background .3s ease, visibility .3s ease;
+            -moz-transition: background .3s ease, visibility .3s ease;
+            transition: background .3s ease, visibility .3s ease;            
+        }  
+    .sidebar-logo{
+        text-align: center;
+        a{
+            img{
+                width: 35%;
+            }
+        }
+    }
+    .main-nav{
+        padding-top: 50px;
+        ul{
+            list-style: none;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 0px 20px;
+                margin: 0px;
+                -webkit-transition: background 0.3s ease;
+                -moz-transition: background 0.3s ease;
+                transition: background 0.3s ease;
+                &:hover{
+                    background: $theme-red;
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+                &:last-child{
+                    a{
+                        border: none;
+                    }
+                }
+                a{
+                    display: block;
+                    padding: 10px 0px;
+                    color: $light-gray;
+                    border-bottom: 1px dotted $light-gray;                    
+                    
+                }
+            }
+        }
+    }
+    &.open-panel{
+        right: 0px;
+        .side-area-mask {
+            visibility: visible;
+            background: rgba(27,27,27,0.5);
+        }
+    }
+}

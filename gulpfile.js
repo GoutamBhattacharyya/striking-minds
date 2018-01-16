@@ -37,14 +37,18 @@ gulp.task('clean-scripts', function(){
         .pipe(clean());
 });
 gulp.task('sass',function(){
+    return setTimeout(() => {
     var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
+    var animateCSS = gulp.src('./node_modules/animate.css/animate.css');
     var sassFiles;
     sassFiles =  gulp.src(SOURCEPATHS.sassApp)
         .pipe(autoprefixer())
-        .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
-        return merge(sassFiles, bootstrapCSS)
+        .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError));
+        return merge(sassFiles, bootstrapCSS, animateCSS)
         .pipe(concat('app.css'))
-        .pipe(gulp.dest(APPPATH.css));
+        .pipe(gulp.dest(APPPATH.css))
+        .pipe(reload({ stream: true }));
+    }, 500);
 });
 
 gulp.task('images', function(){
