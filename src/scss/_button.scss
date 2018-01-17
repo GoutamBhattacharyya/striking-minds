@@ -1,0 +1,38 @@
+.theme-red-button{
+    padding: 15px 54px;
+    font-size: 20px;
+    color: $white;
+    background: $theme-red;
+    text-decoration: none;
+    display: inline-block;
+    @include roundedCorners(3);
+    &:hover{
+        background: $theme-red-hover;
+        color: $white;
+        text-decoration: none;
+    }
+}
+.theme-white-tranparent-button{
+    padding: 10px 54px;
+    font-size: 20px;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+    text-decoration: none;
+    display: inline-block;
+    @include roundedCorners(3);
+    &:hover{
+        background: $white;
+        color: $black;
+        text-decoration: none;
+    }
+}
+.link-text{  
+    color: $theme-red;
+    text-decoration: none;
+    font-size: 16px;
+    &:hover{
+        color: $theme-red-hover;        
+        text-decoration: none;
+    }
+}

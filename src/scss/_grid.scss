@@ -1,0 +1,12 @@
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    [class*="col-"] {
+        padding-top: 15px;
+        padding-bottom: 15px;        
+        border: 1px solid $light-gray;
+       
+    }
+}

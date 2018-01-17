@@ -39,12 +39,13 @@ gulp.task('clean-scripts', function(){
 gulp.task('sass',function(){
     return setTimeout(() => {
     var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
-    var animateCSS = gulp.src('./node_modules/animate.css/animate.css');
-    var sassFiles;
+    var animateCSS = gulp.src('./node_modules/animate.css/animate.css'); 
+    var font = gulp.src('./node_modules/animate.css/animate.css');   
+    var fortawesome = gulp.src('./node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css');
     sassFiles =  gulp.src(SOURCEPATHS.sassApp)
         .pipe(autoprefixer())
         .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError));
-        return merge(sassFiles, bootstrapCSS, animateCSS)
+        return merge(sassFiles, bootstrapCSS, animateCSS, fortawesome)
         .pipe(concat('app.css'))
         .pipe(gulp.dest(APPPATH.css))
         .pipe(reload({ stream: true }));

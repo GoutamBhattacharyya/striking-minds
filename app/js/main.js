@@ -13195,12 +13195,16 @@ var sidePanelOn = false;
 $(document).ready(function(){
 
     // Hamburger amnimation
-	$('.side-panel-controller').click(function(){
+	$('.side-panel-controller').click(function(event){
+        event.preventDefault();
+        $('body').addClass('overflow-hidden');
 		$(this).toggleClass('open');
         $('.sidepanel').toggleClass('open-panel');
         sidePanelOn = true;
     });
-    $('.side-area-mask').click(function(){
+    $('.side-area-mask').click(function(event){
+        event.preventDefault();
+        $('body').removeClass('overflow-hidden');
         $('.sidepanel').removeClass('open-panel');
         $('.side-panel-controller').removeClass('open');
         sidePanelOn = false;
@@ -13228,13 +13232,9 @@ $(document).ready(function(){
                     'top' : event.pageY + 'px',
                     'left' : event.pageX + 'px'
                 });
-                $('*').css({
-                    'cursor': 'none'
-                });
+                $('*').addClass('noneCursor');
             }else{
-                $('*').css({
-                    'cursor': 'auto'
-                }); 
+                $('*').removeClass('noneCursor');
                 $('figure#mouse-pointer').css(
                     {
                         'display': 'none'
