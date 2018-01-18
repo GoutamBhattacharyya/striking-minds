@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-
 $black:                     #000000;
 $white:                     #ffffff;
 $gray:                      #666666;
@@ -8,7 +7,11 @@ $light-gray:                #cccccc;
 $theme-red:                 #f04e23;
 $theme-red-hover:           #d32e00;
 $white-transparent-60:      rgba(256,256,256,.6);
-$hamburger-color: $black;
+$hamburger-color:           $black;
+$gray-box:                  #4d4d4d;
+$testimonial-content:       #2e2e2e;
+$footer-bg:                 #222222; 
+$footer-color:              #d4d4d4;                    
 
 
 

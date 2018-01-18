@@ -10853,6 +10853,14 @@ button.close {
   border: 1px solid #cccccc;
 }
 
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
 .theme-red-button {
   padding: 15px 54px;
   font-size: 20px;
@@ -11391,4 +11399,225 @@ a {
   position: relative;
   top: -50px;
   left: -180px;
+}
+
+.gray-box-bg {
+  background: #4d4d4d;
+}
+
+.gray-box-bg .half-gray-box {
+  padding: 50px 100px;
+}
+
+.gray-box-bg .half-gray-box h3 {
+  font-family: 70px;
+  font-size: 2.9vw;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.red-tick-bullet-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.red-tick-bullet-list li {
+  padding: 5px 0 0 55px;
+  margin: 0px;
+  list-style: none;
+  background: url(../images/tick-bullet.png) center left no-repeat;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 100;
+  line-height: 60px;
+}
+
+.white-tick-bullet-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.white-tick-bullet-list li {
+  padding: 5px 0 0 55px;
+  margin: 0px;
+  list-style: none;
+  background: url(../images/white-tick-bullet.png) center left no-repeat;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 100;
+  line-height: 60px;
+}
+
+.we-different-bg {
+  background-image: url(../images/we-are-different-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hr-bg {
+  background-image: url(../images/hr-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial-bg {
+  background-color: #ffffff;
+  background-image: url(../images/testimonial-banner.jpg);
+  background-attachment: fixed;
+  background-position: right -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.testimonial-bg #testimonial-slider {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.testimonial-bg #testimonial-slider .author-image {
+  width: 140px;
+  height: 140px;
+  -webkit-border-radius: 140px;
+  -moz-border-radius: 140px;
+  border-radius: 140px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.testimonial-bg #testimonial-slider .testimonial-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial-bg #testimonial-slider .testimonial-content p {
+  font-size: 25px;
+  color: #2e2e2e;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.testimonial-bg #testimonial-slider .author-info .author-name {
+  display: block;
+  font-size: 25px;
+  line-height: 25px;
+  font-size: 500;
+  color: #666666;
+}
+
+.testimonial-bg #testimonial-slider .author-info .author-designation {
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  font-size: 500;
+  color: #666666;
+}
+
+.testimonial-bg #testimonial-slider .carousel-control {
+  background-color: transparent;
+  background-image: none;
+  width: auto;
+  top: 42%;
+  opacity: 1;
+}
+
+.testimonial-bg #testimonial-slider .carousel-control.carousel-control.left {
+  left: -50px;
+}
+
+.testimonial-bg #testimonial-slider .carousel-control.carousel-control.right {
+  right: -50px;
+}
+
+.contactus-bg {
+  background-color: #ffffff;
+  background-image: url(../images/contact-banner.jpg);
+  background-attachment: fixed;
+  background-position: right -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.contactus-bg .office-address {
+  padding-top: 200px;
+}
+
+.contactus-bg .office-address ul, .contactus-bg .office-address ul li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contactus-bg .office-address li {
+  font-size: 30px;
+  margin-bottom: 10px !important;
+}
+
+.contactus-bg .office-address li span, .contactus-bg .office-address li a {
+  padding-left: 10px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contactus-bg .office-address li:first-child {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.contactus-bg .office-address li:first-child span {
+  padding-left: 46px;
+  display: block;
+}
+
+.contactus-bg .office-address .svg-inline--fa {
+  font-size: 30px;
+}
+
+.contactus-bg .office-address .svg-inline--fa path {
+  fill: #f04e23;
+}
+
+.contactus-bg .office-address span {
+  display: block;
+}
+
+.contactus-bg .office-address .office-name span {
+  display: inline-block !important;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+  line-height: 60px;
+  padding-left: 15px !important;
+}
+
+footer {
+  background: #222222;
+  padding: 40px 0;
+  color: #d4d4d4;
+  font-size: 15px;
+  text-align: center;
 }

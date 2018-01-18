@@ -254,3 +254,197 @@ a{
         }
     }
 }
+.gray-box-bg {
+    background: $gray-box;
+    .half-gray-box {        
+        padding: 50px 100px;
+        h3{
+            font-family: $bigfont;
+            font-size: 2.9vw;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+.red-tick-bullet-list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    li{
+        padding: 5px 0 0 55px;
+        margin: 0px;
+        list-style: none;
+        background: url(../images/tick-bullet.png) center left no-repeat;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        color: $white;
+        font-weight: 100;
+        line-height: 60px;
+    }
+}
+.white-tick-bullet-list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    li{
+        padding: 5px 0 0 55px;
+        margin: 0px;
+        list-style: none;
+        background: url(../images/white-tick-bullet.png) center left no-repeat;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        color: $white;
+        font-weight: 100;
+        line-height: 60px;
+    }
+}
+.we-different-bg{
+    background-image: url(../images/we-are-different-banner.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hr-bg{
+    background-image: url(../images/hr-banner.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonial-bg{
+    background-color: $white;
+    background-image: url(../images/testimonial-banner.jpg);
+    background-attachment: fixed;
+    background-position: right -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;    
+    position: relative;
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+    text-align: left;
+    #testimonial-slider{
+        background: rgba(256,256,256,.5);
+        text-align: center;
+        .author-image {
+            width: 140px;
+            height: 140px;
+            @include roundedCorners(140);
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .testimonial-content{
+            width: 80%;
+            margin: 0 auto;
+            p{
+                font-size: 25px;
+                color: $testimonial-content;
+                font-style: italic;
+                line-height: 30px;
+            }
+        }
+        .author-info{
+            .author-name{
+                display: block;
+                font-size: 25px;
+                line-height: 25px;
+                font-size: 500;
+                color: $gray;
+            }
+            .author-designation{
+                display: block;
+                font-size: 16px;
+                line-height: 25px;
+                font-size: 500;
+                color: $gray;
+            }
+        }   
+        .carousel-control{
+            background-color: transparent;
+            background-image: none;
+            width: auto;            
+            top: 42%;  
+            opacity: 1;          
+            &.carousel-control.left{
+                left: -50px;
+            }
+            &.carousel-control.right{
+                right: -50px;
+            }
+        }     
+    }
+}
+.contactus-bg{
+    background-color: $white;
+    background-image: url(../images/contact-banner.jpg);
+    background-attachment: fixed;
+    background-position: right -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    //display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;    
+    position: relative;
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+    text-align: left;
+    .office-address{
+        padding-top: 200px;
+        ul, ul li
+        {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        li{
+            font-size: 30px;
+            margin-bottom: 10px !important;
+            span,a{
+                padding-left: 10px;
+                display: inline-block;
+                color: $white;
+                text-decoration: none;
+            }
+            &:first-child{
+                padding-bottom: 20px;
+                margin-bottom: 10px; 
+                span{
+                    padding-left: 46px;
+                    display: block;                  
+                }
+            }
+        }
+        .svg-inline--fa {            
+            font-size: 30px;
+            path{
+                fill: $theme-red;
+            }
+        }
+        span{
+            display: block;
+        }
+        .office-name {
+            span{
+                display: inline-block !important;
+                font-size: 40px;
+                font-weight: bold;
+                font-family: $theme-heading-font;
+                line-height: 60px;
+                padding-left: 15px !important;
+            }
+        }
+    }
+}
+footer {
+    background: $footer-bg;
+    padding: 40px 0;
+    color: $footer-color;
+    font-size: 15px;
+    text-align: center;
+}
