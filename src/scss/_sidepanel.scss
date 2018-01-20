@@ -4,13 +4,15 @@
     z-index: 9999;
     top: 0;
     bottom: 0;
-    right: -380px;
-    width: 350px;
-    background-color: #fff;
+    right: -100%;
+    width: 100%;    
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(256,256,256,.9);
     -webkit-transition: right .3s ease-in-out, left .3s ease-in-out;
     -moz-transition: right .3s ease-in-out, left .3s ease-in-out;
     transition: right .3s ease-in-out, left .3s ease-in-out; 
-    display: flex;
+    //display: flex;
     flex-direction: column;
     justify-content: center; 
         .side-area-mask {
@@ -27,10 +29,11 @@
             transition: background .3s ease, visibility .3s ease;            
         }  
     .sidebar-logo{
+        margin-top: 8%;
         text-align: center;
         a{
             img{
-                width: 35%;
+                width: auto;
             }
         }
     }
@@ -48,12 +51,19 @@
                 margin: 0px;
                 -webkit-transition: background 0.3s ease;
                 -moz-transition: background 0.3s ease;
-                transition: background 0.3s ease;
+                transition: background 0.3s ease; 
+                &.active{
+                    background: $theme-red;                    
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }                
                 &:hover{
                     background: $theme-red;
                     a{
                         color: $white;
-                        text-decoration: none;
+                        text-decoration: none;                        
                     }
                 }
                 &:last-child{
@@ -64,9 +74,9 @@
                 a{
                     display: block;
                     padding: 10px 0px;
-                    color: $light-gray;
-                    border-bottom: 1px dotted $light-gray;                    
-                    
+                    color: $theme-red;
+                    @include interpolate(font-size, 320px, 1920px, 20px, 30px);
+                    border-bottom: 1px dotted $light-gray; 
                 }
             }
         }
@@ -78,4 +88,13 @@
             background: rgba(27,27,27,0.5);
         }
     }
+    .close-button {
+        float: right;
+        margin-right: 10px;
+        margin-top: 18px;
+    }
+}
+
+.hidden-div{
+    display: none;
 }

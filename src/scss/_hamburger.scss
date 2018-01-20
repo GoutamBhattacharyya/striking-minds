@@ -4,7 +4,10 @@
     position: relative;
     display: block;
     float: right;
-    margin-top: 22px;
+    margin-top: 8px;
+    @include breakpointMin(767){
+        margin-top: 22px;
+    }
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);

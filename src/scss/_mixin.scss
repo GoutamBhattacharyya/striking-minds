@@ -15,10 +15,19 @@
         -moz-border-radius: $size + px;
         border-radius: $size + px;  
 }
-//Media Query Breakpoint
+//Media Query Breakpoint min
 @mixin breakpointMin($size) {
     @media only screen and (min-width : $size + px) { @content; }
 }
+//Media Query Breakpoint max
+@mixin breakpointMax($size) {
+    @media only screen and (max-width : $size + px) { @content; }
+}
+
+@mixin breakpointMaxLandcape($size) {
+    @media only screen and (max-width : $size + px) and (orientation: landscape) { @content; }
+}
+
 //box-shadow
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
@@ -31,3 +40,37 @@
       box-shadow: $top $left $blur $color;
     }
   }
+
+  //font-size
+  
+@mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
+	& {
+		@each $property in $properties {
+			#{$property}: $min-value;
+		}
+
+		@media screen and (min-width: $min-screen) {
+			@each $property in $properties {
+				#{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value); 
+			}
+		}
+
+		@media screen and (min-width: $max-screen) {
+			@each $property in $properties {
+				#{$property}: $max-value;
+			}
+		}
+	}
+}
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+	$a: ($max-value - $min-value) / ($max-screen - $min-screen);
+	$b: $min-value - $a * $min-screen; 
+
+	$sign: "+";
+	@if ($b < 0) {
+		$sign: "-";
+		$b: abs($b);
+	}
+	@return calc(#{$a*100}vw #{$sign} #{$b});
+}

@@ -15,7 +15,7 @@ a{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.4);
     top: 0px;
     left: 0px;  
 }
@@ -27,7 +27,13 @@ a{
     background-color: $gray;
     background-image: url(../images/home-banner.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: 21% 60px;
+    @include breakpointMin(769){
+        background-position: 0px 96px;
+    }
+    @include breakpointMin(600){
+        background-position: 16% 96px;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -46,9 +52,8 @@ a{
         margin: 0 auto;
         font-family: $theme-heading-font;
         h1{
-            font-size: $bigfont;
-            text-transform: uppercase;
-            line-height: 74px;
+            @include interpolate(font-size, 320px, 1920px, 30px, 70px);
+            text-transform: uppercase;            
             color: $black;
             margin: 0px;
             padding: 0px;
@@ -56,9 +61,8 @@ a{
         }
         h3{
             font-family: $theme-heading-font;
-            font-size: $medium-size-type-1;
+            @include interpolate(font-size, 320px, 1920px, 15px, 35px);
             text-transform: uppercase;
-            line-height: 54px;
             font-style: italic;
             color: $black;
             margin: 0px;
@@ -81,21 +85,25 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;    
+    min-height: 100vh; 
+    @include breakpointMaxLandcape(767) {
+        min-height:auto; 
+        padding: 50px 0;
+        background-position: 61% 0px;
+    }   
     position: relative;
     text-align: center;
     position: relative;
     z-index: 1; 
     .about-heading {
-        font-size: 50px;
+        @include interpolate(font-size, 320px, 1920px, 30px, 50px);
         font-family: $theme-heading-font;
         color: $white;
         font-weight: 700;
     }
     .about-text{
         color: $white;
-        font-size: 20px;
-        line-height: 30px;
+        @include interpolate(font-size, 320px, 1920px, 16px, 20px);        
         font-style: italic;
     }
 }
@@ -126,7 +134,7 @@ a{
     }
 }
 .center-heading {
-    font-size: 50px;
+    @include interpolate(font-size, 320px, 1920px, 30px, 50px);   
     font-weight: 700;
     color: $gray;
     margin: 0px;
@@ -154,11 +162,21 @@ a{
     position: relative;
     z-index: 1; 
     text-align: left;
+    padding: 30px 0 30px 0;
+    @include breakpointMin(767){
+        padding: 0;
+    }
 }
 .blog-post {
+    padding: 30px 0 30px 0;
+    
+    @include breakpointMin(767){
+        padding: 0;
+    }
     img{
         border: 1px solid $white;
         @include roundedCorners(3);
+        width: 100%;
     }
     .title-text{
         font-size: 20px;
@@ -191,6 +209,9 @@ a{
     text-align: left;
     .services-box{
         text-align: center;
+        @include breakpointMax (767){
+            padding-top:20px;
+        }
         .service-title{
             font-family: $theme-heading-font;
             font-size: 25px;
@@ -257,10 +278,12 @@ a{
 .gray-box-bg {
     background: $gray-box;
     .half-gray-box {        
-        padding: 50px 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include interpolate((padding-left,padding-right), 320px, 1920px, 30px, 100px);
         h3{
-            font-family: $bigfont;
-            font-size: 2.9vw;
+            font-family: $theme-heading-font;
+            @include interpolate(font-size, 320px, 1920px, 25px, 50px); 
             color: $white;
             font-weight: 700;
             text-transform: uppercase;
@@ -275,12 +298,12 @@ a{
         padding: 5px 0 0 55px;
         margin: 0px;
         list-style: none;
-        background: url(../images/tick-bullet.png) center left no-repeat;
+        background: url(../images/tick-bullet.png) 0px 13px no-repeat;
         font-family: 'Roboto', sans-serif;
-        font-size: 40px;
+        @include interpolate(font-size, 320px, 1920px, 20px, 40px); 
         color: $white;
         font-weight: 100;
-        line-height: 60px;
+        @include interpolate(line-height, 320px, 1920px, 40px, 60px);       
     }
 }
 .white-tick-bullet-list{
@@ -291,23 +314,29 @@ a{
         padding: 5px 0 0 55px;
         margin: 0px;
         list-style: none;
-        background: url(../images/white-tick-bullet.png) center left no-repeat;
+        background: url(../images/white-tick-bullet.png) 0px 13px no-repeat;
         font-family: 'Roboto', sans-serif;
-        font-size: 40px;
+        @include interpolate(font-size, 320px, 1920px, 20px, 40px); 
         color: $white;
         font-weight: 100;
-        line-height: 60px;
+        @include interpolate(line-height, 320px, 1920px, 40px, 60px);
     }
 }
 .we-different-bg{
     background-image: url(../images/we-are-different-banner.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
+    @include breakpointMax(767){
+        height: 300px;
+    }
 }
 .hr-bg{
     background-image: url(../images/hr-banner.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
+    @include breakpointMax(767){
+        height: 300px;
+    }
 }
 .testimonial-bg{
     background-color: $white;
@@ -320,7 +349,16 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;    
+    min-height: 100vh;  
+    @include breakpointMax(475) {
+        min-height: 150vh; 
+        background-position: 61% 0px;
+    } 
+    @include breakpointMaxLandcape(767) {
+        min-height:auto; 
+        padding: 50px 0;
+        background-position: 61% 0px;
+    } 
     position: relative;
     text-align: center;
     position: relative;
@@ -339,11 +377,11 @@ a{
         .testimonial-content{
             width: 80%;
             margin: 0 auto;
-            p{
-                font-size: 25px;
+            p{                
+                @include interpolate(font-size, 320px, 1920px, 16px, 25px);
                 color: $testimonial-content;
                 font-style: italic;
-                line-height: 30px;
+                @include interpolate(line-height, 320px, 1920px, 20px, 30px);
             }
         }
         .author-info{
@@ -369,10 +407,19 @@ a{
             top: 42%;  
             opacity: 1;          
             &.carousel-control.left{
-                left: -50px;
+                left: 0;
+                @include breakpointMin(769) {
+                    left: -30px;
+                }
+                @include breakpointMin(1359) {
+                    left: -50px;
+                }
             }
             &.carousel-control.right{
-                right: -50px;
+                right: 0;
+                @include breakpointMin(1359) {
+                    right: -50px;
+                }
             }
         }     
     }
@@ -388,7 +435,16 @@ a{
     //display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;    
+    min-height: 100vh;  
+    @include breakpointMax(475) {
+        min-height: 150vh;
+        background-position: 61% 0px; 
+    }  
+    @include breakpointMaxLandcape(767) {
+        min-height:auto; 
+        padding: 50px 0;
+        background-position: 61% 0px;
+    }
     position: relative;
     text-align: center;
     position: relative;
@@ -402,8 +458,8 @@ a{
             padding: 0px;
             margin: 0px;
         }
-        li{
-            font-size: 30px;
+        li{            
+            @include interpolate(font-size, 320px, 1920px, 15px, 30px);
             margin-bottom: 10px !important;
             span,a{
                 padding-left: 10px;
@@ -416,12 +472,13 @@ a{
                 margin-bottom: 10px; 
                 span{
                     padding-left: 46px;
+                    @include interpolate(padding-left, 320px, 1920px, 30px, 46px);
                     display: block;                  
                 }
             }
         }
         .svg-inline--fa {            
-            font-size: 30px;
+            @include interpolate(font-size, 320px, 1920px, 15px, 30px);
             path{
                 fill: $theme-red;
             }
@@ -433,18 +490,12 @@ a{
             span{
                 display: inline-block !important;
                 font-size: 40px;
+                @include interpolate(font-size, 320px, 1920px, 20px, 40px); 
                 font-weight: bold;
                 font-family: $theme-heading-font;
-                line-height: 60px;
+                @include interpolate(line-height, 320px, 1920px, 40px, 60px);
                 padding-left: 15px !important;
             }
         }
     }
-}
-footer {
-    background: $footer-bg;
-    padding: 40px 0;
-    color: $footer-color;
-    font-size: 15px;
-    text-align: center;
 }

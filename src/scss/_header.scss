@@ -5,15 +5,27 @@ header{
     @include box-shadow(1px,1px,8px,$light-gray,false);
     position: fixed;
     z-index: 10;
-    width: 100%
+    width: 100%;
+    .logo{
+        a{
+            img{
+                width: 70%;                
+                @include breakpointMin(500){
+                    width: 50%;
+                }
+                @include breakpointMin(767){
+                    width: auto;
+                }
+            }
+        }
+    }
 }
 
-figure#mouse-pointer {    
+#mouse-pointer {    
 	background-image: url('../images/slide-off-panel.png');
 	width: 44px;
 	height: 44px;
-	position: absolute;
-	margin-left: -8px; 
-    display: none;
+	position: relative;
+	margin-left: -8px;     
     z-index: 11;
 }
