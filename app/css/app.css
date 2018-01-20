@@ -11472,8 +11472,6 @@ a {
 }
 
 .arround-bg {
-  background-color: #40473f;
-  background-image: url(../images/arround-banner.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -11528,8 +11526,6 @@ a {
 }
 
 .services-bg {
-  background-color: #ffffff;
-  background-image: url(../images/services-bg.png);
   background-attachment: fixed;
   background-position: right -100px;
   background-repeat: no-repeat;
@@ -11929,8 +11925,6 @@ a {
 }
 
 .contactus-bg {
-  background-color: #ffffff;
-  background-image: url(../images/contact-banner.jpg);
   background-attachment: fixed;
   background-position: right -100px;
   background-repeat: no-repeat;
