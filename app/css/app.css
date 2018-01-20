@@ -11261,8 +11261,6 @@ a {
 }
 
 .home-bg {
-  background-color: #40473f;
-  background-image: url(../images/home-banner.jpg);
   background-attachment: fixed;
   background-position: 21% 60px;
   background-repeat: no-repeat;
@@ -11349,8 +11347,6 @@ a {
 }
 
 .about-bg {
-  background-color: #40473f;
-  background-image: url(../images/about-banner.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

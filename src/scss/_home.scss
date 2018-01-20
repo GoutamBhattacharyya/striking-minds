@@ -24,8 +24,8 @@ a{
     background: transparent;
 }
 .home-bg {
-    background-color: $gray;
-    background-image: url(../images/home-banner.jpg);
+    //background-color: $gray;
+    //background-image: url(../images/home-banner.jpg);
     background-attachment: fixed;
     background-position: 21% 60px;
     @include breakpointMin(769){
@@ -75,8 +75,8 @@ a{
     
 }
 .about-bg {
-    background-color: $gray;
-    background-image: url(../images/about-banner.jpg);
+    //background-color: $gray;
+    //background-image: url(../images/about-banner.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
