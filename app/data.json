@@ -16,5 +16,11 @@
             "imgPath":"hrpolicy-banner.jpg",
             "title": "HR CONNECT"
         }
+    ],
+    "testimonial":[
+        {
+            "imgPath":"testimonial-inner-banner.jpg",
+            "title": "TESTIMONIALS"
+        }
     ]
 }
