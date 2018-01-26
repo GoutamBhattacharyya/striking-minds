@@ -78,9 +78,9 @@ a{
     //background-color: $gray;
     //background-image: url(../images/about-banner.jpg);
     background-attachment: fixed;
-    background-position: center !important;
+    //background-position: 0px -100px !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    //background-size: cover !important;
     color: #fff;
     display: flex;
     flex-direction: column;
