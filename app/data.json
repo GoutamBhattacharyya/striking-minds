@@ -22,5 +22,41 @@
             "imgPath":"testimonial-inner-banner.jpg",
             "title": "TESTIMONIALS"
         }
+    ],
+    "sales":[
+        {
+            "imgPath":"sales-banner.jpg",
+            "title": "SALES AND MARKETING"
+        }
+    ],
+    "supply":[
+        {
+            "imgPath":"supply-banner.jpg",
+            "title": "SUPPLY CHAIN"
+        }
+    ],
+    "procurment":[
+        {
+            "imgPath":"procurment-banner.jpg",
+            "title": "PROCUREMENT"
+        }
+    ],
+    "hrmanagement":[
+        {
+            "imgPath":"hrmanagement-banner.jpg",
+            "title": "HR MANAGEMENT"
+        }
+    ],
+    "bdm":[
+        {
+            "imgPath":"bdm-inner-banner.jpg",
+            "title": "BUSINESS PROCESS MANAGEMENT"
+        }
+    ],
+    "personality":[
+        {
+            "imgPath":"personality-inner-banner.jpg",
+            "title": "PERSONALITY ENRICHMENT & GROOMING"
+        }
     ]
 }

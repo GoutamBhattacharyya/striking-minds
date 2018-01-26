@@ -50,18 +50,63 @@
     
     </div>
     <script id="template" type="x-teml-mustache">
-        {{#testimonial}}        
-            <div class="innerbanner-image" style="background-image:url(images/{{imgPath}})">
-                <div class="black-overly"></div>
+        {{#procurment}}        
+            <div class="innerbanner-image" style="background-image:url(images/{{imgPath}})">                
                 <h2>{{title}}</h2>           
             </div>
-        {{/testimonial}}
+        {{/procurment}}
     </script>
     <div class="inner-body-content pt-70 pb-70">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-12">
+                    <p>
+                        No matter how great the business strategy, if the operations function can’t meet the mark, the game is over. 
+                        Striking Mind’s Consulting is way ahead in helping companies integrate business strategy with supply chain 
+                        initiatives to drive operational excellence. Our deep and hands-on industry experience encompasses new product 
+                        development, inventory strategy and integrated demand planning, sourcing and commodity management, manufacturing 
+                        footprint strategy and operations, distribution network and logistics optimization, and sustainability.
+                    </p>
                 </div>
+                <div class="col-sm-7">
+                    <p>
+                        A resilient supply chain can not only help enterprises respond swiftly and effectively to economic, technological 
+                        and market disruptions, but also gain a competitive advantage. The goal of a resilient supply chain is to minimize 
+                        the negative impacts of these disruptions on revenues, costs, and customers. We employ programmatic approaches, 
+                        leverage analytics capabilities and help enterprises to improve top-line growth, lower costs, reduce response 
+                        times and increase productivity. 
+                    </p>
+                </div>
+                <div class="col-sm-5">
+                    <img class="img-responsive" src="images/supply-inner-two.jpg" alt="" title="">
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="images/supply-inner-one.jpg" alt="" title="">
+                </div>
+                <div class="col-sm-6">
+                    <h4>We offer:</h4>
+                    <ul>
+                        <li>Supply Chain Diagnostics </li>
+                        <li>Supply Chain Strategy</li>
+                        <li>Supply Chain Planning</li>
+                        <li>Network Optimization </li>
+                        <li>Inventory Optimization </li>
+                        <li>Logistics & Distribution</li>
+                        <li>Supply Chain Dashboard </li>
+                        <li>Manufacturing Strategy & Operations</li>
+                        <li>Product Strategy & Development</li>
+                        <li>Risk Management and Sustainability </li>
+                    </ul>
+                </div>                 
+
+                <div class="col-sm-12">
+                    <p>
+                        We do not stop at recommending “high-level” supply chain strategies; Striking Minds helps you implement and
+                         operationalize them for real-world success. Our Team of supply chain management experts start with a 
+                         comprehensive assessment of your supply chain, understand your business priorities, and then develop 
+                         robust supply chain strategies capable of rapidly adapting to changing business needs. 
+                    </p>
+                </div>              
             </div>
         </div>
     </div>
@@ -94,14 +139,8 @@
             pathname = "Sales & Marketing";
         }else if(window.location.href.indexOf("supply.html")> -1){
             pathname = "Supply Chain";
-        }else if(window.location.href.indexOf("procurement.html")> -1){
+        }else if(window.location.href.indexOf("procurment.html")> -1){
             pathname = "Procurement";
-        }else if(window.location.href.indexOf("hrmanagement.html")> -1){
-            pathname = "HR Management";
-        }else if(window.location.href.indexOf("bdm.html")> -1){
-            pathname = "Business Process Management";
-        }else if(window.location.href.indexOf("personality.html")> -1){
-            pathname = "Personality Enrichment & Grooming";
         }
         $('.main-nav').html('<ul><li class="active"><a href="#">'+pathname+'</a></li><li><a href="index.html">Back</a></li></ul>');    
     })

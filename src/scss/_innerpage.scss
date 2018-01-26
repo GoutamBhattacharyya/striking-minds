@@ -23,8 +23,25 @@
 }
 
 .inner-body-content {
+    img{
+        margin-bottom: 20px;
+    }
+    h4{
+        margin: 0px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    ul{
+        padding: 0px;
+        list-style-position: inside;
+        li{
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+    }
     p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
         font-family: $theme-body-font;
         margin-bottom: 30px;
@@ -131,4 +148,10 @@
 
 .accordion-toggle.active {
     color: #ff0000;
+}
+
+.black-text{
+    color: $black !important;
+    background: rgba(255, 255, 255, .7);
+    padding: 10px 0 !important;
 }
