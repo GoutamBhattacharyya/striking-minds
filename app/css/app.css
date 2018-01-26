@@ -12081,3 +12081,82 @@ a {
     line-height: 60px;
   }
 }
+
+.innerbanner-image {
+  background-attachment: fixed;
+  background-position: 21% 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.innerbanner-image h2 {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+  z-index: 5;
+}
+
+.innerbanner-image h2 {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .innerbanner-image h2 {
+    font-size: calc(1.25vw + 26px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .innerbanner-image h2 {
+    font-size: 50px;
+  }
+}
+
+.inner-body-content p {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: #40473f;
+  margin-bottom: 30px;
+}
+
+.inner-sidebar h3 {
+  margin: 0px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.inner-sidebar .sidebar-widget .sidebar-table {
+  display: table;
+  padding-bottom: 20px;
+}
+
+.inner-sidebar .sidebar-widget .sidebar-table .sidebar-tebel-cell {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+}
+
+.inner-sidebar .sidebar-widget .sidebar-table .sidebar-tebel-cell .rounded-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.inner-sidebar .sidebar-widget .sidebar-table .sidebar-tebel-cell .rounded-image img {
+  width: 130px;
+  position: relative;
+  top: 0;
+  left: -50%;
+}

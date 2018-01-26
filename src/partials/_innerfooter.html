@@ -1,0 +1,30 @@
+<footer>
+        © 2018 - Striking Minds
+    </footer>
+    <script src="js/main.js"></script>    
+<script>
+    var $ = jQuery;
+    $(document).ready(function() {
+
+        //dynamic image
+        var jqxhr = $.getJSON('data.json',function(){
+
+        }).done(function(data){
+            var template = $('#template').html();
+            var showTemplate = mustache.render(template, data);
+            $('#innerBanner').html(showTemplate);       
+        });    
+
+        var pathname="";
+        if (window.location.href.indexOf("about.html") > -1){ 
+            pathname = "About Us";
+        }else if(window.location.href.indexOf("whyweare.html") > -1){
+            pathname = "Why We Are Different";
+        }
+        $('.main-nav').html('<ul><li class="active"><a href="#">'+pathname+'</a></li><li><a href="index.html">Back</a></li></ul>');    
+    })
+
+
+</script>
+</body>
+</html>

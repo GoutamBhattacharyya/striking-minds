@@ -1,4 +1,4 @@
-<!-- partial:partials/_header.html -->
+<!-- partial:partials/_innerheader.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 col-xs-8 logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/logo.png" alt="logo" title="logo">
                     </a>
                 </div>
@@ -41,50 +41,153 @@
                 <img src="images/logo.png" alt="logo" title="logo">
             </a>
         </div>
-        <div class="main-nav">
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#vision-mision">Vision Mission and Values</a>
-                </li>
-                <li>
-                    <a href="#aboutus">About Us</a>
-                </li> 
-                <li>
-                    <a href="#arround-the-world">Around The World</a>
-                </li>               
-                <li>
-                    <a href="#our-services">Why We Are Different</a>
-                </li>
-                <li>
-                    <a href="#why-different">Our Expertise</a>
-                </li>
-                <li>
-                    <a href="#hr-policy">HR Connect</a>
-                </li>                
-                <li>
-                    <a href="#testimonial">Testimonials</a>
-                </li>
-                <li>
-                    <a href="#contact-us">Contact</a>
-                </li>
-            </ul>
+        <div class="main-nav">            
         </div>
         <div class="side-area-mask"></div>
     </section>
 <!-- partial -->
-<div class="container">
-    <div class="row">
-        <h2>About Page</h2>
+<div id="innerBanner">
+    
+</div>
+<script id="template" type="x-teml-mustache">
+    {{#aboutbanner}}        
+        <div class="innerbanner-image" style="background-image:url(images/{{imgPath}})">
+            <div class="black-overly"></div>
+            <h2>{{title}}</h2>           
+        </div>
+    {{/aboutbanner}}
+</script>
+<div class="inner-body-content pt-70 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    We, at <strong>Striking Minds Consulting</strong> have committed and acted as the preferred Management Consulting Partner for enterprises, 
+                    especially the medium, small and start up organizations in India. We are the trusted Consulting Advisor who believes in 
+                    system & process driven operation for daily business functionalities as well as resolving mission critical issues.  
+                </p>
+                <p>
+                    Witnessing the present economic scenario we find that the unorganized and small-scale sector of India which is responsible for 
+                    about 40% of GDP, have been impacted after the demonetization and implementation of GST (source: Business Today - 19th Sept. 2017). 
+                    This Goods and Services Tax, hailed as the biggest tax reform in 70 years of independence, where our government has promised a 
+                    modern, transparent and technology driven operational system with greater compliance. Hence it’s time to become professional in 
+                    the operation of businesses.   
+                </p>
+                <p>
+                    But there is no reason to worry, since Striking Minds has professional experts to guide through all the stages. We are the 
+                    trusted consultant with hands on experience in Business Process Management, proud to have domain specialists who have authority 
+                    in their respective fields and long-standing relationships in the industry. We are one of the fastest growing Management Consulting 
+                    Company and stand out among the crowd as the best Strategy Execution Partner in both short and long-term assignments.
+                </p>
+                <p>
+                    Striking Minds – The first choice for not only building any organization but also to develop our people and society. 
+                    Our passion drives us to constantly redefine boundaries in one of the most exciting economies of the world. This has 
+                    helped us deliver results that are measurable, establishing our credibility in the market. 
+                </p>
+            </div>
+            <!-- <div class="col-sm-4 col-sm-offset-1">
+                <div class="inner-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>
+                            OUR SERVICES
+                        </h3>
+                        <div class="sidebar-table">
+                            <div class="sidebar-tebel-cell">
+                                <div class="rounded-image">
+                                    <img src="images/sales-rounded.jpg">
+                                </div>
+                            </div>
+                            <div class="sidebar-tebel-cell">
+                                <h4>Sales & Marketing</h4>
+                            </div>
+                        </div>                           
+                        <div class="sidebar-table">
+                            <div class="sidebar-tebel-cell">
+                                <div class="rounded-image">
+                                    <img src="images/supply-rounded.jpg">
+                                </div>
+                            </div>
+                            <div class="sidebar-tebel-cell">
+                                <h4>Supply Chain Management</h4>
+                            </div>
+                        </div>    
+                        <div class="sidebar-table">                       
+                            <div class="sidebar-tebel-cell">
+                                <div class="rounded-image">
+                                    <img src="images/procurement.jpg">
+                                </div>
+                            </div>
+                            <div class="sidebar-tebel-cell">
+                                <h4>Procurement</h4>
+                            </div>
+                        </div> 
+                        <div class="sidebar-table">
+                            <div class="sidebar-tebel-cell">
+                                <div class="rounded-image">
+                                    <img src="images/hr-rounded.jpg">
+                                </div>
+                            </div>
+                            <div class="sidebar-tebel-cell">
+                                <h4>Human Resource Management</h4>
+                            </div>
+                        </div>
+                        <div class="sidebar-table">
+                            <div class="sidebar-tebel-cell">
+                                <div class="rounded-image">
+                                    <img src="images/execituve-rounded.jpg">
+                                </div>
+                            </div>
+                            <div class="sidebar-tebel-cell">
+                                <div>
+                                    <h4>Executive Search & Head Hunting</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-table">
+                            <div class="sidebar-tebel-cell">
+                                <div class="rounded-image">
+                                    <img src="images/personality-rounded.jpg">
+                                </div>
+                            </div>
+                            <div class="sidebar-tebel-cell">
+                                <h4>Personality Enrichment & Grooming</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </div>
 </div>
-<!-- partial:partials/_footer.html -->
+<!-- partial:partials/_innerfooter.html -->
 <footer>
-    © 2018 - Striking Minds
-</footer>
-<script src="js/main.js"></script>
+        © 2018 - Striking Minds
+    </footer>
+    <script src="js/main.js"></script>    
+<script>
+    var $ = jQuery;
+    $(document).ready(function() {
+
+        //dynamic image
+        var jqxhr = $.getJSON('data.json',function(){
+
+        }).done(function(data){
+            var template = $('#template').html();
+            var showTemplate = mustache.render(template, data);
+            $('#innerBanner').html(showTemplate);       
+        });    
+
+        var pathname="";
+        if (window.location.href.indexOf("about.html") > -1){ 
+            pathname = "About Us";
+        }else if(window.location.href.indexOf("whyweare.html") > -1){
+            pathname = "Why We Are Different";
+        }
+        $('.main-nav').html('<ul><li class="active"><a href="#">'+pathname+'</a></li><li><a href="index.html">Back</a></li></ul>');    
+    })
+
+
+</script>
 </body>
 </html>
 <!-- partial -->

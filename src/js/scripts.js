@@ -2,13 +2,13 @@ global.jQuery =  require('jquery');
 bootstrap = require('bootstrap');
 WOW = require('wow.js');
 parallax = require('jquery-parallax.js');
-//mustache = require('mustache');
+mustache = require('mustache');
 
 
 var $ = jQuery;
 var sidePanelOn = false;
-$(document).ready(function(){
 
+$(document).ready(function(){
     // Hamburger amnimation
 	$('.side-panel-controller').click(function(event){
         event.preventDefault();
@@ -65,7 +65,7 @@ $(document).ready(function(){
     //     });      
     
     // });
-
+    
 });
 
 

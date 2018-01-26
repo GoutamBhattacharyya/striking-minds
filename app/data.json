@@ -1,0 +1,20 @@
+{
+    "aboutbanner":[
+        {
+            "imgPath":"about-inner-banner.jpg",
+            "title": "About Us"
+        }
+    ],
+    "wearedifferentbanner":[
+        {
+            "imgPath":"we-are-different-inner-banner.jpg",
+            "title": "WHY WE ARE DIFFERENT"
+        }
+    ],
+    "hrcontent":[
+        {
+            "imgPath":"hrpolicy-banner.jpg",
+            "title": "HR CONNECT"
+        }
+    ]
+}
