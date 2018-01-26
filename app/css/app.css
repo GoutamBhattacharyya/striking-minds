@@ -11310,13 +11310,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .home-bg .bg-white-transparent h1 {
-    font-size: calc(2.5vw + 22px);
+    font-size: calc(1.875vw + 24px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .home-bg .bg-white-transparent h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 
@@ -11336,13 +11336,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .home-bg .bg-white-transparent h3 {
-    font-size: calc(1.25vw + 11px);
+    font-size: calc(0.9375vw + 12px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .home-bg .bg-white-transparent h3 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -11370,6 +11370,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .about-bg {
+    background-position: -500px 0px !important;
+  }
+}
+
 .about-bg .about-heading {
   font-family: "Archivo", sans-serif;
   color: #ffffff;
@@ -11382,13 +11388,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .about-bg .about-heading {
-    font-size: calc(1.25vw + 26px);
+    font-size: calc(0.9375vw + 27px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .about-bg .about-heading {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -11403,13 +11409,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .about-bg .about-text {
-    font-size: calc(0.25vw + 15.2px);
+    font-size: calc(0.125vw + 15.6px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .about-bg .about-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -11454,18 +11460,18 @@ a {
 
 @media screen and (min-width: 320px) {
   .center-heading {
-    font-size: calc(1.25vw + 26px);
+    font-size: calc(0.9375vw + 27px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .center-heading {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
 .center-caption-text {
-  font-size: 20px;
+  font-size: 18px;
   color: #40473f;
   line-height: 30px;
   margin: 0px;
@@ -11571,6 +11577,20 @@ a {
   text-align: left;
 }
 
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .services-bg {
+    background-position: -86px -80px !important;
+    background-size: 140% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .services-bg {
+    background-position: -86px 63px !important;
+    background-size: 200% !important;
+  }
+}
+
 .services-bg .services-box {
   text-align: center;
 }
@@ -11583,16 +11603,16 @@ a {
 
 .services-bg .services-box .service-title {
   font-family: "Archivo", sans-serif;
-  font-size: 25px;
-  color: #40473f;
+  font-size: 24px;
+  color: #000000;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .services-bg .services-box .services-text {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
-  color: #40473f;
+  color: #000000;
 }
 
 .rounded-image {
@@ -11607,38 +11627,38 @@ a {
 
 .rounded-image.sales-image img {
   position: relative;
-  top: -80px;
-  left: -100px;
+  top: -15px;
+  left: -20px;
 }
 
 .rounded-image.supply-rounded-image img {
   position: relative;
-  top: -80px;
-  left: -100px;
+  top: 0px;
+  left: -65px;
 }
 
 .rounded-image.procurement-image img {
   position: relative;
-  top: -320px;
-  left: -90px;
+  top: -10px;
+  left: -30px;
 }
 
 .rounded-image.hr-image img {
   position: relative;
-  top: -50px;
-  left: -180px;
+  top: -0px;
+  left: -50px;
 }
 
 .rounded-image.execituve-image img {
   position: relative;
-  top: -50px;
-  left: -180px;
+  top: -10px;
+  left: -60px;
 }
 
-.rounded-image.personality-imag img {
+.rounded-image.personality-image img {
   position: relative;
-  top: -50px;
-  left: -180px;
+  top: 0px;
+  left: -120px;
 }
 
 .gray-box-bg {
@@ -11682,13 +11702,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .gray-box-bg .half-gray-box h3 {
-    font-size: calc(1.5625vw + 20px);
+    font-size: calc(0.9375vw + 22px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .gray-box-bg .half-gray-box h3 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -11714,13 +11734,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .red-tick-bullet-list li {
-    font-size: calc(1.25vw + 16px);
+    font-size: calc(0.625vw + 18px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .red-tick-bullet-list li {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -11730,13 +11750,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .red-tick-bullet-list li {
-    line-height: calc(1.25vw + 36px);
+    line-height: calc(0.625vw + 38px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .red-tick-bullet-list li {
-    line-height: 60px;
+    line-height: 50px;
   }
 }
 
@@ -11762,13 +11782,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .white-tick-bullet-list li {
-    font-size: calc(1.25vw + 16px);
+    font-size: calc(0.625vw + 18px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .white-tick-bullet-list li {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -11778,13 +11798,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .white-tick-bullet-list li {
-    line-height: calc(1.25vw + 36px);
+    line-height: calc(0.625vw + 38px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .white-tick-bullet-list li {
-    line-height: 60px;
+    line-height: 50px;
   }
 }
 
@@ -11877,13 +11897,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .testimonial-bg #testimonial-slider .testimonial-content p {
-    font-size: calc(0.5625vw + 14.2px);
+    font-size: calc(0.375vw + 14.8px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .testimonial-bg #testimonial-slider .testimonial-content p {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -11893,13 +11913,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .testimonial-bg #testimonial-slider .testimonial-content p {
-    line-height: calc(0.625vw + 18px);
+    line-height: calc(0.4375vw + 18.6px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .testimonial-bg #testimonial-slider .testimonial-content p {
-    line-height: 30px;
+    line-height: 27px;
   }
 }
 
@@ -11976,11 +11996,19 @@ a {
   }
 }
 
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
   .contactus-bg {
     min-height: auto;
     padding: 50px 0;
     background-position: 61% 0px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .contactus-bg {
+    min-height: auto;
+    padding: 50px 0;
+    background-position: -500px 100px !important;
   }
 }
 
@@ -12004,13 +12032,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .contactus-bg .office-address li {
-    font-size: calc(0.9375vw + 12px);
+    font-size: calc(0.75vw + 12.6px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .contactus-bg .office-address li {
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 
@@ -12085,13 +12113,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .contactus-bg .office-address .office-name span {
-    font-size: calc(1.25vw + 16px);
+    font-size: calc(0.9375vw + 17px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .contactus-bg .office-address .office-name span {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -12101,13 +12129,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .contactus-bg .office-address .office-name span {
-    line-height: calc(1.25vw + 36px);
+    line-height: calc(0.9375vw + 37px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .contactus-bg .office-address .office-name span {
-    line-height: 60px;
+    line-height: 55px;
   }
 }
 

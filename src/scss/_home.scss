@@ -52,7 +52,7 @@ a{
         margin: 0 auto;
         font-family: $theme-heading-font;
         h1{
-            @include interpolate(font-size, 320px, 1920px, 30px, 70px);
+            @include interpolate(font-size, 320px, 1920px, 30px, 60px);
             text-transform: uppercase;            
             color: $black;
             margin: 0px;
@@ -61,7 +61,7 @@ a{
         }
         h3{
             font-family: $theme-heading-font;
-            @include interpolate(font-size, 320px, 1920px, 15px, 35px);
+            @include interpolate(font-size, 320px, 1920px, 15px, 30px);
             text-transform: uppercase;
             font-style: italic;
             color: $black;
@@ -91,19 +91,22 @@ a{
         padding: 50px 0;
         background-position: 61% 0px !important;
     }   
+    @include breakpointMaxPortrait(767){
+        background-position: -500px 0px !important;        
+    }
     position: relative;
     text-align: center;
     position: relative;
     z-index: 1; 
     .about-heading {
-        @include interpolate(font-size, 320px, 1920px, 30px, 50px);
+        @include interpolate(font-size, 320px, 1920px, 30px, 45px);
         font-family: $theme-heading-font;
         color: $white;
         font-weight: 700;
     }
     .about-text{
         color: $white;
-        @include interpolate(font-size, 320px, 1920px, 16px, 20px);        
+        @include interpolate(font-size, 320px, 1920px, 16px, 18px);        
         font-style: italic;
     }
 }
@@ -134,13 +137,13 @@ a{
     }
 }
 .center-heading {
-    @include interpolate(font-size, 320px, 1920px, 30px, 50px);   
+    @include interpolate(font-size, 320px, 1920px, 30px, 45px);   
     font-weight: 700;
     color: $gray;
     margin: 0px;
 }
 .center-caption-text {
-    font-size: 20px;
+    font-size: 18px;
     color: $gray;
     line-height: 30px;
     margin: 0px;
@@ -214,6 +217,14 @@ a{
    // background-image: url(../images/services-bg.png);
     background-attachment: fixed;
     background-position: right -100px;
+    @include breakpointMaxLandcape(1024){
+        background-position: -86px -80px !important;
+        background-size: 140% !important;
+    }
+    @include breakpointMaxPortrait(1024){
+        background-position: -86px 63px !important;
+        background-size: 200% !important;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -233,15 +244,15 @@ a{
         }
         .service-title{
             font-family: $theme-heading-font;
-            font-size: 25px;
-            color: $gray;        
+            font-size: 24px;
+            color: $black;        
             text-transform: uppercase;
             font-weight: 700;
         }
         .services-text {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 20px;
-            color: $gray;
+            color: $black;
         }
     }        
 }
@@ -254,43 +265,43 @@ a{
     &.sales-image{
         img{
             position: relative;
-            top: -80px;
-            left: -100px;
+            top: -15px;
+            left: -20px;
         }
     }
     &.supply-rounded-image{
         img{
             position: relative;
-            top: -80px;
-            left: -100px;
+            top: 0px;
+            left: -65px;
         }
     }
     &.procurement-image {
         img{
             position: relative;
-            top: -320px;
-            left: -90px;
+            top: -10px;
+            left: -30px;
         }
     }
     &.hr-image{
         img{
             position: relative;
-            top: -50px;
-            left: -180px;
+            top: -0px;
+            left: -50px;
         }
     }
     &.execituve-image{
         img{
             position: relative;
-            top: -50px;
-            left: -180px;
+            top: -10px;
+            left: -60px;
         }
     }
-    &.personality-imag{
+    &.personality-image{
         img{
             position: relative;
-            top: -50px;
-            left: -180px;
+            top: 0px;
+            left: -120px;
         }
     }
 }
@@ -302,7 +313,7 @@ a{
         @include interpolate((padding-left,padding-right), 320px, 1920px, 30px, 100px);
         h3{
             font-family: $theme-heading-font;
-            @include interpolate(font-size, 320px, 1920px, 25px, 50px); 
+            @include interpolate(font-size, 320px, 1920px, 25px, 40px); 
             color: $white;
             font-weight: 700;
             text-transform: uppercase;
@@ -319,10 +330,10 @@ a{
         list-style: none;
         background: url(../images/tick-bullet.png) 0px 13px no-repeat;
         font-family: 'Roboto', sans-serif;
-        @include interpolate(font-size, 320px, 1920px, 20px, 40px); 
+        @include interpolate(font-size, 320px, 1920px, 20px, 30px); 
         color: $white;
         font-weight: 100;
-        @include interpolate(line-height, 320px, 1920px, 40px, 60px);       
+        @include interpolate(line-height, 320px, 1920px, 40px, 50px);       
     }
 }
 .white-tick-bullet-list{
@@ -335,10 +346,10 @@ a{
         list-style: none;
         background: url(../images/white-tick-bullet.png) 0px 13px no-repeat;
         font-family: 'Roboto', sans-serif;
-        @include interpolate(font-size, 320px, 1920px, 20px, 40px); 
+        @include interpolate(font-size, 320px, 1920px, 20px, 30px); 
         color: $white;
         font-weight: 100;
-        @include interpolate(line-height, 320px, 1920px, 40px, 60px);
+        @include interpolate(line-height, 320px, 1920px, 40px, 50px);
     }
 }
 .we-different-bg{
@@ -397,10 +408,10 @@ a{
             width: 80%;
             margin: 0 auto;
             p{                
-                @include interpolate(font-size, 320px, 1920px, 16px, 25px);
+                @include interpolate(font-size, 320px, 1920px, 16px, 22px);
                 color: $testimonial-content;
                 font-style: italic;
-                @include interpolate(line-height, 320px, 1920px, 20px, 30px);
+                @include interpolate(line-height, 320px, 1920px, 20px, 27px);
             }
         }
         .author-info{
@@ -459,10 +470,15 @@ a{
         min-height: 150vh;
         background-position: 61% 0px; 
     }  
-    @include breakpointMaxLandcape(767) {
+    @include breakpointMaxLandcape(1024) {
         min-height:auto; 
         padding: 50px 0;
         background-position: 61% 0px;
+    }
+    @include breakpointMaxPortrait(1024){
+        min-height:auto; 
+        padding: 50px 0;
+        background-position: -500px 100px !important;        
     }
     position: relative;
     text-align: center;
@@ -478,7 +494,7 @@ a{
             margin: 0px;
         }
         li{            
-            @include interpolate(font-size, 320px, 1920px, 15px, 30px);
+            @include interpolate(font-size, 320px, 1920px, 15px, 27px);
             margin-bottom: 10px !important;
             span,a{
                 padding-left: 10px;
@@ -509,10 +525,10 @@ a{
             span{
                 display: inline-block !important;
                 font-size: 40px;
-                @include interpolate(font-size, 320px, 1920px, 20px, 40px); 
+                @include interpolate(font-size, 320px, 1920px, 20px, 35px); 
                 font-weight: bold;
                 font-family: $theme-heading-font;
-                @include interpolate(line-height, 320px, 1920px, 40px, 60px);
+                @include interpolate(line-height, 320px, 1920px, 40px, 55px);
                 padding-left: 15px !important;
             }
         }

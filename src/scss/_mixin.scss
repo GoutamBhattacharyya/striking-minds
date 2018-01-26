@@ -28,6 +28,10 @@
     @media only screen and (max-width : $size + px) and (orientation: landscape) { @content; }
 }
 
+@mixin breakpointMaxPortrait($size) {
+    @media only screen and (max-width : $size + px) and (orientation: portrait) { @content; }
+}
+
 //box-shadow
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
