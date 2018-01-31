@@ -1,7 +1,7 @@
 {
     "aboutbanner":[
         {
-            "imgPath":"about-inner-banner.jpg",
+            "imgPath":"about-banner.jpg",
             "title": "About Us"
         }
     ],
@@ -19,7 +19,7 @@
     ],
     "testimonial":[
         {
-            "imgPath":"testimonial-inner-banner.jpg",
+            "imgPath":"testimonial-banner.jpg",
             "title": "TESTIMONIALS"
         }
     ],

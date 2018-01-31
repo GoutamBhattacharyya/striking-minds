@@ -1,3 +1,9 @@
+.ios-device{
+    .innerbanner-image{
+        background-attachment: scroll !important;
+        
+    }
+}
 .innerbanner-image {
     background-attachment: fixed;
     background-position: 21% 0px;
@@ -16,9 +22,10 @@
         text-transform: uppercase;
         color: $white;
         margin: 0px;
-        padding: 0px;
+        padding: 10px 0px;
         font-weight: 700;
         z-index: 5;
+        background: rgba(0, 0, 0, .3)
     }
 }
 
@@ -154,4 +161,48 @@
     color: $black !important;
     background: rgba(255, 255, 255, .7);
     padding: 10px 0 !important;
+}
+.testimonial-listing{
+    .testimonial-listing-box{
+        display: table;
+        font-size: 16px;
+        .testimonial-content-right{
+            display: table-cell;
+            vertical-align: middle;
+            background: #f6f6f6;
+            padding: 30px;   
+            position: relative;
+            &:before{
+                content: "";
+                background-image: url(../images/testimonial-arrow.png);
+                width: 40px;
+                height: 34px;
+                position: absolute;
+                top: 0px;
+                left: -40px;
+            }     
+        }
+        .testimonial-content-left{
+            display: table-cell;
+            padding-right: 30px;   
+            vertical-align: middle; 
+            .author-image{            
+                width: 85px;
+                height: 85px;
+                @include roundedCorners(85);
+                overflow: hidden;
+                position: relative;
+                img{
+                    width: 110%;                
+                }
+            }
+        }
+    }
+    .author{
+        float: right;
+        font-size: 16px;
+        color: #0ad0fa;
+        padding-top: 5px;
+        max-width: 75%;
+    }
 }

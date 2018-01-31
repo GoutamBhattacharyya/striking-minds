@@ -61,6 +61,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
+                    <div class="testimonial-listing">
+                        <div class="testimonial-listing-box">
+                            <div class="testimonial-content-left">
+                                <div class="author-image">
+                                    <img src="images/testimonia-author.jpg" alt="" title="">
+                                </div>
+                            </div>
+                            <div class="testimonial-content-right">                            
+                                "I am pleased to inform that Striking Minds Consulting has been quite 
+                                helpful to our organization to improve efficiency. The firm’s overall 
+                                strategic analysis and solutions are valuable to realize corporate 
+                                Vision & Mission into reality"                            
+                            </div>                            
+                        </div>
+                        <div class="author text-right">
+                            – Karishma Jaiswal, HR Executive – Decorazzi Paints
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,7 +120,10 @@
             pathname = "Business Process Management";
         }else if(window.location.href.indexOf("personality.html")> -1){
             pathname = "Personality Enrichment & Grooming";
+        }else if(window.location.href.indexOf("testimonial.html")> -1){
+            pathname = "Testimonial";
         }
+        
         $('.main-nav').html('<ul><li class="active"><a href="#">'+pathname+'</a></li><li><a href="index.html">Back</a></li></ul>');    
     })
 

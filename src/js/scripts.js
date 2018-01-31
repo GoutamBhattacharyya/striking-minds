@@ -90,7 +90,7 @@ $('a[href*="#"]')
         event.preventDefault();
         if($(window).width()>1100){
             $('html, body').animate({
-                scrollTop: target.offset().top-50
+                scrollTop: target.offset().top-100
                 }, 1000, function() {
                 // Callback after animation
                 // Must change focus!
@@ -98,7 +98,7 @@ $('a[href*="#"]')
             });
         }else{
             $('html, body').animate({
-                scrollTop: target.offset().top+20
+                scrollTop: target.offset().top-100
                 }, 1000, function() {
                 // Callback after animation
                 // Must change focus!
@@ -120,7 +120,7 @@ var navChildren = $('.main-nav ul li').children();
         aArray.push(ahref);
     }
     $(window).scroll(function () {
-        var windowPos = $(window).scrollTop();
+        var windowPos = $(window).scrollTop()+150;
         var windowHeight = $(window).height();
         var docHeight = $(document).height();
         for (var i = 0; i < aArray.length; i++) {
@@ -150,3 +150,36 @@ var navChildren = $('.main-nav ul li').children();
         });
     });
         
+$(window).on('load',function() {
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        $('html').addClass('ios-device');
+         //alert("hi");
+        // $('body').find('.parallax-window').each(function(){
+        //     var cc= $(this).attr('data-image-src');
+        //     $(this).removeAttr('data-image-src data-parallax data-iosfix data-position');
+        //     $(this).css({
+        //         'background-image': cc
+        //     });
+        //     $(this).removeClass('parallax-window');
+        // });   
+        $('.parallax-window').each(function(){
+            var imgPath = $(this).attr('data-image-src');
+            $(this).removeClass('parallax-window');
+            $(this).css({
+                 'background-image': 'url('+imgPath+')',
+                // 'background-size' : 'cover',
+                'background-attachment' : 'scroll'
+                //'min-height': $(window).height()
+                //'display':'block'
+            });
+        });    
+    }else{
+        $('.parallax-window').each(function(){
+            var imgPath = $(this).attr('data-image-src');
+            $(this).parallax({
+                imageSrc:imgPath,
+                position: '10px top'
+            });
+        });
+    }
+});

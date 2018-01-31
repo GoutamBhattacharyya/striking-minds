@@ -107,7 +107,7 @@ a{
     .about-text{
         color: $white;
         @include interpolate(font-size, 320px, 1920px, 16px, 18px);        
-        font-style: italic;
+        //font-style: italic;
     }
 }
 
@@ -254,6 +254,9 @@ a{
             line-height: 20px;
             color: $black;
         }
+        .link-text{
+            font-weight: bold;
+        }
     }        
 }
 .rounded-image {
@@ -368,6 +371,20 @@ a{
         height: 300px;
     }
 }
+.ios-device{
+    .testimonial-bg{
+        background-attachment: scroll !important;
+        @include breakpointMax(475) {
+            min-height: 150vh; 
+            background-position: 51% 0px;
+        } 
+        @include breakpointMaxLandcape(767) {
+            min-height:auto; 
+            padding: 50px 0;
+            background-position: 61% 0px;
+        }
+    }
+}
 .testimonial-bg{
     background-color: $white;
     background-image: url(../images/testimonial-banner.jpg);
@@ -451,7 +468,15 @@ a{
                     right: -50px;
                 }
             }
-        }     
+        }
+    }
+    .theme-white-transparent-button {
+        background: rgba(256,256,256,.5);
+        color: rgba(0,0,0,.5);
+        &:hover{
+            background: rgba(256,256,256,1);
+            color: rgba(0,0,0,1);
+        }
     }
 }
 .contactus-bg{
