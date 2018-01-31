@@ -13994,8 +13994,7 @@ $(window).on('load',function() {
         $('.parallax-window').each(function(){
             var imgPath = $(this).attr('data-image-src');
             $(this).parallax({
-                imageSrc:imgPath,
-                position: '10px top'
+                imageSrc:imgPath
             });
         });
     }

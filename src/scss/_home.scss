@@ -23,6 +23,11 @@ a{
     min-height: 400px;
     background: transparent;
 }
+.parallax-mirror {
+    img{
+        top: 50px;
+    }
+}
 .home-bg {
     //background-color: $gray;
     //background-image: url(../images/home-banner.jpg);
