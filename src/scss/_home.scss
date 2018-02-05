@@ -372,6 +372,7 @@ a{
     background-image: url(../images/hr-banner.jpg);    
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right center;
     @include breakpointMax(767){
         height: 300px;
     }
