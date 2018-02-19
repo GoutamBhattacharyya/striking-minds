@@ -149,8 +149,11 @@ var navChildren = $('.main-nav ul li').children();
             $(this).toggleClass('active').siblings().removeClass('active');
         });
     });
-        
-$(window).on('load',function() {
+
+function myFunction() {
+    myVar = setTimeout(parallaxFormation, 2000);
+}    
+function parallaxFormation(){
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
         $('html').addClass('ios-device');
          //alert("hi");
@@ -181,4 +184,8 @@ $(window).on('load',function() {
             });
         });
     }
+}   
+$(window).on('load',function() {
+    myFunction();
+    
 });

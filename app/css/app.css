@@ -10097,8 +10097,8 @@ button.close {
   animation-name: slideOutUp;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i");
 .m-0 {
   margin: 0;
 }
@@ -10850,7 +10850,6 @@ button.close {
   .row-eq-height [class*="col-"] {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 1px solid #cccccc;
   }
 }
 
@@ -11172,7 +11171,7 @@ footer {
 }
 
 .sidepanel .main-nav ul li.active {
-  background: #f04e23;
+  background: #000000;
 }
 
 .sidepanel .main-nav ul li.active a {
@@ -11181,7 +11180,7 @@ footer {
 }
 
 .sidepanel .main-nav ul li:hover {
-  background: #f04e23;
+  background: #000000;
 }
 
 .sidepanel .main-nav ul li:hover a {
@@ -11195,24 +11194,24 @@ footer {
 
 .sidepanel .main-nav ul li a {
   display: block;
-  padding: 10px 0px;
-  color: #f04e23;
+  padding: 7px 0px;
+  color: #000000;
   border-bottom: 1px dotted #cccccc;
 }
 
 .sidepanel .main-nav ul li a {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
   .sidepanel .main-nav ul li a {
-    font-size: calc(0.625vw + 18px);
+    font-size: calc(0.4375vw + 16.6px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .sidepanel .main-nav ul li a {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -11236,7 +11235,7 @@ footer {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .overflow-hidden {
@@ -11303,7 +11302,7 @@ a {
   padding: 25px;
   width: 72%;
   margin: 0 auto;
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-bg .bg-white-transparent h1 {
@@ -11331,7 +11330,7 @@ a {
 }
 
 .home-bg .bg-white-transparent h3 {
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-style: italic;
   color: #000000;
@@ -11385,7 +11384,7 @@ a {
 }
 
 .about-bg .about-heading {
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-weight: 700;
 }
@@ -11396,13 +11395,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .about-bg .about-heading {
-    font-size: calc(0.9375vw + 27px);
+    font-size: calc(0.625vw + 28px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .about-bg .about-heading {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
@@ -11437,7 +11436,7 @@ a {
 }
 
 .icon-para-pos-center .vision-heading {
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
   color: #40473f;
   font-weight: 600;
@@ -11447,7 +11446,7 @@ a {
 }
 
 .icon-para-pos-center .vision-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #40473f;
@@ -11467,13 +11466,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .center-heading {
-    font-size: calc(0.9375vw + 27px);
+    font-size: calc(0.625vw + 28px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .center-heading {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
@@ -11609,7 +11608,7 @@ a {
 }
 
 .services-bg .services-box .service-title {
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
   color: #000000;
   text-transform: uppercase;
@@ -11701,7 +11700,7 @@ a {
 }
 
 .gray-box-bg .half-gray-box h3 {
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -11713,13 +11712,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .gray-box-bg .half-gray-box h3 {
-    font-size: calc(0.9375vw + 22px);
+    font-size: calc(0.625vw + 23px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .gray-box-bg .half-gray-box h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -11745,13 +11744,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .red-tick-bullet-list li {
-    font-size: calc(0.625vw + 18px);
+    font-size: calc(0.3125vw + 19px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .red-tick-bullet-list li {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -11782,7 +11781,7 @@ a {
   margin: 0px;
   list-style: none;
   background: url(../images/white-tick-bullet.png) 0px 13px no-repeat;
-  font-family: 'Roboto', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #ffffff;
   font-weight: 100;
 }
@@ -11793,13 +11792,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .white-tick-bullet-list li {
-    font-size: calc(0.625vw + 18px);
+    font-size: calc(0.3125vw + 19px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .white-tick-bullet-list li {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -11928,13 +11927,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .testimonial-bg #testimonial-slider .testimonial-content p {
-    font-size: calc(0.375vw + 14.8px);
+    font-size: calc(0.5625vw + 14.2px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .testimonial-bg #testimonial-slider .testimonial-content p {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
@@ -12073,13 +12072,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .contactus-bg .office-address li {
-    font-size: calc(0.75vw + 12.6px);
+    font-size: calc(0.4375vw + 13.6px);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .contactus-bg .office-address li {
-    font-size: 27px;
+    font-size: 22px;
   }
 }
 
@@ -12144,7 +12143,7 @@ a {
   display: inline-block !important;
   font-size: 40px;
   font-weight: bold;
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding-left: 15px !important;
 }
 
@@ -12202,11 +12201,13 @@ a {
 .innerbanner-image h2 {
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0px;
-  padding: 10px 0px;
+  padding: 10px 20px;
   font-weight: 700;
   z-index: 5;
   background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: inline-table;
+  margin: 0 auto;
 }
 
 .innerbanner-image h2 {
@@ -12249,7 +12250,7 @@ a {
 .inner-body-content p {
   font-size: 16px;
   line-height: 26px;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -12268,7 +12269,7 @@ a {
 .inner-sidebar .sidebar-widget .sidebar-table .sidebar-tebel-cell {
   display: table-cell;
   vertical-align: middle;
-  font-family: "Archivo", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -12298,7 +12299,7 @@ a {
   position: relative;
   font-weight: bold;
   font-size: 22px;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .accordion-toggle.active:after {
@@ -12349,7 +12350,7 @@ a {
   padding: 5px 0px;
   font-size: 18px;
   line-height: 26px;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .accordion-toggle.active {
@@ -12392,17 +12393,8 @@ a {
 }
 
 .testimonial-listing .testimonial-listing-box .testimonial-content-left .author-image {
-  width: 85px;
-  height: 85px;
-  -webkit-border-radius: 85px;
-  -moz-border-radius: 85px;
-  border-radius: 85px;
-  overflow: hidden;
   position: relative;
-}
-
-.testimonial-listing .testimonial-listing-box .testimonial-content-left .author-image img {
-  width: 110%;
+  top: 25px;
 }
 
 .testimonial-listing .author {

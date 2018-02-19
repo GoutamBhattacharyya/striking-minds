@@ -104,7 +104,7 @@ a{
     position: relative;
     z-index: 1; 
     .about-heading {
-        @include interpolate(font-size, 320px, 1920px, 30px, 45px);
+        @include interpolate(font-size, 320px, 1920px, 30px, 40px);
         font-family: $theme-heading-font;
         color: $white;
         font-weight: 700;
@@ -142,7 +142,7 @@ a{
     }
 }
 .center-heading {
-    @include interpolate(font-size, 320px, 1920px, 30px, 45px);   
+    @include interpolate(font-size, 320px, 1920px, 30px, 40px);   
     font-weight: 700;
     color: $gray;
     margin: 0px;
@@ -321,7 +321,7 @@ a{
         @include interpolate((padding-left,padding-right), 320px, 1920px, 30px, 100px);
         h3{
             font-family: $theme-heading-font;
-            @include interpolate(font-size, 320px, 1920px, 25px, 40px); 
+            @include interpolate(font-size, 320px, 1920px, 25px, 35px); 
             color: $white;
             font-weight: 700;
             text-transform: uppercase;
@@ -338,7 +338,7 @@ a{
         list-style: none;
         background: url(../images/tick-bullet.png) 0px 13px no-repeat;
         font-family: 'Roboto', sans-serif;
-        @include interpolate(font-size, 320px, 1920px, 20px, 30px); 
+        @include interpolate(font-size, 320px, 1920px, 20px, 25px); 
         color: $white;
         font-weight: 100;
         @include interpolate(line-height, 320px, 1920px, 40px, 50px);       
@@ -353,8 +353,8 @@ a{
         margin: 0px;
         list-style: none;
         background: url(../images/white-tick-bullet.png) 0px 13px no-repeat;
-        font-family: 'Roboto', sans-serif;
-        @include interpolate(font-size, 320px, 1920px, 20px, 30px); 
+        font-family: $theme-body-font;
+        @include interpolate(font-size, 320px, 1920px, 20px, 25px); 
         color: $white;
         font-weight: 100;
         @include interpolate(line-height, 320px, 1920px, 40px, 50px);
@@ -431,7 +431,7 @@ a{
             width: 80%;
             margin: 0 auto;
             p{                
-                @include interpolate(font-size, 320px, 1920px, 16px, 22px);
+                @include interpolate(font-size, 320px, 1920px, 16px, 25px);
                 color: $testimonial-content;
                 font-style: italic;
                 @include interpolate(line-height, 320px, 1920px, 20px, 27px);
@@ -525,7 +525,7 @@ a{
             margin: 0px;
         }
         li{            
-            @include interpolate(font-size, 320px, 1920px, 15px, 27px);
+            @include interpolate(font-size, 320px, 1920px, 15px, 22px);
             margin-bottom: 10px !important;
             span,a{
                 padding-left: 10px;

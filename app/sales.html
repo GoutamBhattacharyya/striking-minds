@@ -125,29 +125,40 @@
         });    
 
         var pathname="";
+        var anchoreTarget ="";
         if (window.location.href.indexOf("about.html") > -1){ 
             pathname = "About Us";
+            anchoreTarget = "#"+"aboutus"
         }else if(window.location.href.indexOf("whyweare.html") > -1){
             pathname = "Why We Are Different";
+            anchoreTarget = "#"+"why-different";
         }else if(window.location.href.indexOf("hrpolicy.html")> -1){
             pathname = "HR Connect";
+            anchoreTarget = "#"+"hr-policy";
         }else if(window.location.href.indexOf("sales.html")> -1){
             pathname = "Sales & Marketing";
+            anchoreTarget ="#"+"our-services";
         }else if(window.location.href.indexOf("supply.html")> -1){
             pathname = "Supply Chain";
+            anchoreTarget ="#"+"our-services";
         }else if(window.location.href.indexOf("procurement.html")> -1){
             pathname = "Procurement";
+            anchoreTarget ="#"+"our-services";
         }else if(window.location.href.indexOf("hrmanagement.html")> -1){
             pathname = "HR Management";
+            anchoreTarget ="#"+"our-services";
         }else if(window.location.href.indexOf("bdm.html")> -1){
             pathname = "Business Process Management";
+            anchoreTarget ="#"+"our-services";
         }else if(window.location.href.indexOf("personality.html")> -1){
             pathname = "Personality Enrichment & Grooming";
+            anchoreTarget ="#"+"our-services";
         }else if(window.location.href.indexOf("testimonial.html")> -1){
             pathname = "Testimonial";
+            anchoreTarget ="#"+"testimonial";
         }
         
-        $('.main-nav').html('<ul><li class="active"><a href="#">'+pathname+'</a></li><li><a href="index.html">Back</a></li></ul>');    
+        $('.main-nav').html('<ul><li class="active"><a href="#">'+pathname+'</a></li><li><a href="index.html'+anchoreTarget+'">Back</a></li></ul>');    
     })
 
 

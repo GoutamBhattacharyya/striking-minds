@@ -21,11 +21,13 @@
         @include interpolate(font-size, 320px, 1920px, 30px, 50px);
         text-transform: uppercase;
         color: $white;
-        margin: 0px;
-        padding: 10px 0px;
+        padding: 10px 20px;
         font-weight: 700;
         z-index: 5;
-        background: rgba(0, 0, 0, .3)
+        background: rgba(0, 0, 0, .3);
+        position: relative;
+        display: inline-table;
+        margin: 0 auto;
     }
 }
 
@@ -187,14 +189,15 @@
             padding-right: 30px;   
             vertical-align: middle; 
             .author-image{            
-                width: 85px;
-                height: 85px;
-                @include roundedCorners(85);
-                overflow: hidden;
+                // width: 85px;
+                // height: 85px;
+                // @include roundedCorners(85);
+                // overflow: hidden;
                 position: relative;
-                img{
-                    width: 110%;                
-                }
+                top: 25px;
+                // img{
+                //     width: 110%;                
+                // }
             }
         }
     }

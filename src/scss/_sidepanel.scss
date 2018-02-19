@@ -56,14 +56,14 @@
                 -moz-transition: background 0.3s ease;
                 transition: background 0.3s ease; 
                 &.active{
-                    background: $theme-red;                    
+                    background: $black;                    
                     a{
                         color: $white;
                         text-decoration: none;
                     }
                 }                
                 &:hover{
-                    background: $theme-red;
+                    background: $black;
                     a{
                         color: $white;
                         text-decoration: none;                        
@@ -76,9 +76,9 @@
                 }
                 a{
                     display: block;
-                    padding: 10px 0px;
-                    color: $theme-red;
-                    @include interpolate(font-size, 320px, 1920px, 20px, 30px);
+                    padding: 7px 0px;
+                    color: $black;
+                    @include interpolate(font-size, 320px, 1920px, 18px, 25px);
                     border-bottom: 1px dotted $light-gray; 
                 }
             }
